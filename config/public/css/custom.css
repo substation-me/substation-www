@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo|Quicksand&display=swap');
+
+/* styles */
+/* called by your view template */
+html, body {
+  min-height:100%;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+body {
+  height:100%;
+  background-color:rgb(255, 255, 255);
+  font-size: 16px;
+  font-family:'Arvo','helvetica neue',helvetica,arial,sans-serif;
+}
+
+h1,h2,h3,h4 {
+  font-family:'Quicksand','helvetica neue',helvetica,arial,sans-serif;
+  color:#000;
+}
+
+h1 {
+  font-size:3.5em;
+  font-weight:bold;
+  margin-bottom:0.25em;
+}
+
+h2 {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size:2em;
+  font-weight:bold;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 0.125em;
+  text-transform:uppercase;
+}
+
+ul {
+  list-style-type: none;
+  color: rgb(235, 219, 0);
+}
+
+li {
+  padding-left: 20px;
+}
+
+li .logo {
+  margin-right:0.75em;
+}
+
+li span {
+  color:#fff;
+  font-weight:400;
+}
+
+span.logo {
+  position:relative;
+  top:-0.15em;
+  font-size: 0.75em;
+  letter-spacing: -0.1em;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+span.diy {
+  color:#1EAEDB;
+}
+
+span.glitch {
+  display: inline-block;
+  position: relative;
+  top: 8px;
+  margin-right: 8px;
+  width: 42px;
+  height: 42px;
+  background-size: cover;
+  border-radius: 21px;
+  background-image: url(https://cdn.glitch.com/38a30f29-aa18-44b4-a077-cecc038350a9%2Fglitched-glitch.png?v=1573670100233);
+}
+
+div.remix p {
+  padding-left:52px;
+}
+
+div.remix a.button {
+  background-color:#1EAEDB;
+  font-family:'Quicksand','helvetica neue',helvetica,arial,sans-serif;
+}
+
+div.remix a.button:hover {
+  background-color: rgb(235, 219, 0);
+}
+
+div.section.more {
+  background-color: #000;
+}
+
+div.section.more div.seven.columns {
+  padding-top: 36px;
+  padding-bottom: 24px;
+}
+
+.small {
+  font-size:0.8em;
+}
+
+.spacer {
+  height:1px;
+  overflow: visible;
+}
+
+
+/* unsubscribe  */
+
+#unsubscribe-form-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#unsubscribeForm {
+  display: flex; 
+  justify-content: space-between
+}
+
+#unsubscribeForm input {
+  height: 48px;
+}
+
+#unsubscribeForm input[type=submit] {
+  width:40% !important;
+}
+
+#unsubscribeForm input[type=email] {
+  color:#222;
+  width:57% !important;
+}
+
+
+/* form elements */
+
+form {
+  margin-bottom: 25px;
+  padding: 15px 0 15px 0;
+  display: inline-block;
+  font-weight:200;
+  width: 100%;
+}
+
+/*
+input[type=text] {
+  font-family: system-ui;
+  font-weight: 400;
+  padding: 12px;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(40, 44, 55);
+}
+*/
+  
+a.button, button, input[type=submit], input[type=button] {
+  font-family:'Quicksand','helvetica neue',helvetica,arial,sans-serif;
+  font-size: 12px;
+  line-height:16px;
+  background-color: mediumseagreen;
+  width:100%;
+  border: none;
+  padding: 16px;
+  height: 48px;
+  color: #fff;
+  text-transform:uppercase;
+  cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+a.button:hover, button:hover, input[type=submit]:hover, input[type=button]:hover {
+  color:black;
+  background-color: rgb(235, 219, 0);
+}
+
+button:disabled, input[type=button]:disabled {
+  background-color: #666;
+  color: #999;
+}
+
+
+/* hero */
+.hero {
+  padding: 10em 0 12em 0;
+  background: bottom center no-repeat url(https://cdn.glitch.com/9f35da85-6537-4c08-8c75-92364571d412%2Fhero.jpg?v=1580922576463);
+}
+
+
+/* body */
+#widget-copy {
+  position: relative;
+  top:-11em;
+  right:-1em;
+  text-align:right;
+}
+
+#body-copy {
+  padding:2em 0 1.5em 0;
+  color:#fff;
+  font-size:1.125em;
+}
+
+#body-copy a {
+  text-decoration: none;
+}
+
+#body-copy li {
+  display: inline-block;
+  margin-right:1.5em;
+  margin-left:-1.5em;
+}
+
+#body-copy li span {
+  display: inline-block;
+  position: relative;
+  top: 9px;
+  margin-right: 0.5em;
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  border-radius: 12px;
+}
+
+span.twitter {
+  background-image: url(https://abs.twimg.com/responsive-web/web/icon-ios.8ea219d08eafdfa44.png);
+}
+
+span.github {
+  background-image: url(https://cdn.glitch.com/9f35da85-6537-4c08-8c75-92364571d412%2Fgithub-logo.png?v=1580955140729);
+}
+
+
+
+/* footer */
+.footer {
+  font-size:0.8em;
+  padding: 6% 0 3% 0;
+}
+
+.footer li {
+  line-height: 24px;
+  padding-left: 0;
+}
+
+.corner {
+  padding-top:3em;
+  font-size:1.2em;
+  text-align:right;
+}
+
+/*subscription widget*/
+iframe.vv-embed {
+  box-shadow: -2px 2px 4px rgba(0,0,0,0.3);
+  border-radius: 9px;
+}
+
+#details {
+  position: relative;
+  top:-9em;
+}
+
+
+/* Smaller than 635 */
+@media (max-width: 635px) {
+  
+  #body-copy {
+    padding:12em 0 1.5em 0;
+  }
+}
+
+
+@media (min-width:636px) and (max-width:960px) {
+  
+  #body-copy {
+    padding:5em 0 1.5em 0;
+  }
+  
+}
